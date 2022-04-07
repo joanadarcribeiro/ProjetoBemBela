@@ -1,0 +1,55 @@
+
+.topo{
+
+    texto-align:center;
+  background-color: #800080;
+  height:200px;
+}
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 2px #000;
+    font-family: verdana ;
+
+}
+.pesquisar{
+    text-align: width;
+}
+
+h2 {
+    text-align: center;
+    color: #bd87f2;
+}
+
+.texto {
+    text-justify;
+    font: size 16px;
+    font-family: arial;
+
+}
+
+.conteudo{
+    text-align: center;
+    font-family:verdana;
+    font-size:16px;
+    padding:20px;
+}
+.rodape{
+
+    text-aling:center;
+    font-family:verdana;
+    text-shadow:2px 2px 2px #000;
+    color:#fff ;
+    backgraud-color: #191970 ;
+
+}
+
+h3{
+	text-align: center;
+	font-family: verdana;
+	font-size: 18px;
+}
+
+    .div,p {
+        text-align: center;
+    }
+      
