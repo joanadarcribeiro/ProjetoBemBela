@@ -2,72 +2,104 @@
 <htm lang="pt-br">
 
     <head>
-        <meta charset="utf-8"/>
+        <meta charset="utf-8" />
         <title> Salão de beleza</title>
-        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/estilo.css">
-         
+        <link rel="stylesheet" type="text/css" href="css/estilo.css" media="all" />
+
     </head>
 
     <body>
-    <div class="topo">
-       <p>  <img src="img/alongamento.jpg" alt="topo" height="350" width="350"> </src>  </p> 
-    </div>
-    <hr><br><br>
-    <h1> Salão de Beleza</h1>
-   <div class = "pesquisa">
-  <form ethod="get" action="recebe.php">
-    <h6>serviços</h6>
+
+        <div class="topo">
+            <div class="div-menu-check">
+                <input type="checkbox" id="chec">
+                <label for="chec"><img src="img/barra-de-menu (1).png" width="50" height="50"></label>
+            </div>
+            <h1 class="titulo"> Salão de Beleza Bem Bella</h1>
+        </div>
+        <!--<div class = "pesquisa"></div>-->
+
+
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">CABELOS</a></li>
+                <li><a href="">MEGA HER</a></li>
+                <li><a href="">CONTATOS</a></li>
+                <li><a href="">SOBRE</a></li>
+
+            </ul>
+        </nav>
+        <form ethod="get" action="recebe.php">
+            <!----  <h6>serviços</h6>
         Pesquise no Site: &nbsp<input type= "text" name="pesquisa" >
-    <input type= "submit" name= "enviar" value= "Pesquisa">
- </form>
-     </div>
-     <h2> Bem Bella </h2>
-            <figure>
-               <figcaption>
-                <h4> alongamentos</h4>
-                <h2> Quem somos? </h2>
+    <input type= "submit" name= "enviar" value= "Pesquisa"> -->
+        </form>
+        <div class="content">
+            <section class="corpo">
+                <div class="imagem">
+                    <img src=" img/aplique.jpg" title=" Mega Her" alt=" tic tac" width="350" height="250""/>
+                </div>
+                <div class=" texto">
+                    <h2> Quem somos? </h2>
+                    <p>
+                        Somos um salão de beleza especialisados em cuidados especiais com seus cabelos
+                        e sua pele, estamos aqui para melhor atende-lo, realizamos sonhos, <br>
+                        nossa felicidade é te deixar cada vez mais Bela.<br>
+                    </p>
+    
+                    <h2>Serviços prestado </h2>
+    
+                    <p>Trabalhamos com todos os tipos de cabelo, nossa especialidade é cabelos afros, apliques, Dreds e
+                        tranças. aplicamos quimicas em geral como: relaxamento, progressiva, botox, permanetes entre
+                        outros.<br>
+                        temos alongamentos de silios e sombrancelhas definitivas, fazemos maquiagens para evetos (noivas
+                        ,madrinhas, Debutantes), escova, corte entre outros serviços.<br>
+                        Venha fazer seu orçamento entre em contato, e não fique fora das nossas promoções. <br><br>
+                    </p>
+                </div>
+            </section>
+            <div class="conteudo">
+                <fieldset>
+                    <legend> Faça um orçamento de Alongamento </legend>
+                    <br>
+                    <form method="'post" action=" orcamento.php">
+                        Data do orçamento:&nbsp <input type="date" name="data">
+                        validade do Orcamento:&nbsp <input type="number" name="Validade do Orçamento" min="1" max="3">
+                        Serviço a ser Realizado:&nbsp
+                        <select name="servico">
+                            <option> Alongamento (microlink) </option>
+                            <option> Alongamento (Nó Italiano) </option>
+                            <option> Alongamento (Queratina ) </option>
+                            <option> Alongamento (Tela) </option>
+                            <option> Cabelos de (40 cm) </option>
+                            <option> Cabelos de (50 cm ) </option>
+                            <option> Cabelos(60 cm) </option>
+                            <option> Cabelos(70 cm) </option>
+                            <option> Outros Serviços </option>
+                            <br>
+                        </select>
+                        <br>
+                        Descriação do Serviço:&nbsp<input type="text" name="Serviço"><br>
+                        Nome do cliente:&nbsp<input type="text" name="Cliente"><br>
+                        <input type="submit" name=" Calcular" value=" visualizar orçamento"><br>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>
+        $('#chec').on("click", () => {
 
-                <p>
-                    Somos um salão de beleza especialisados em cuidados especiais com seus cabelos
-                     e sua pele, estamos aqui para melhor atende-lo, realizamos sonhos, <br>
-                    nossa felicidade  é te deixar cada vez mais Bela.<br>
-                    
-                    <h2>Serviços prestado  </h2>
+            let delay = 500;
 
-            <p>Trabalhamos com todos os tipos de cabelo, nossa especialidade é cabelos afros, apliques, Dreds e tranças. aplicamos quimicas em geral como: relaxamento, progressiva, botox, permanetes  entre outros.<br>
-                 temos alongamentos de silios e sombrancelhas definitivas,  fazemos maquiagens para evetos (noivas ,madrinhas, Debutantes), escova, corte entre outros serviços.<br> 
-                 Venha fazer seu orçamento entre em contato, e não fique fora das nossas promoções. <br><br>
-                </p>
-                <div class="conteudo">
-    <fieldset>
-        <legend> Faça um orçamento de Alongamento </legend>
-        <br><form method="'post" action=" orcamento.php">
-        Data do orçamento:&nbsp <input type="date" name="data">
-       validade do Orcamento:&nbsp <input type="number" name="Validade do Orçamento" min="1" max="3">
-       Serviço a ser Realizado:&nbsp 
-       <select name="servico">
-           <option> Alongamento (microlink) </option>
-           <option> Alongamento (Nó Italiano) </option>
-           <option> Alongamento (Queratina ) </option>
-           <option> Alongamento (Tela) </option>
-           <option> Cabelos de  (40 cm) </option>
-           <option> Cabelos de (50 cm ) </option>
-           <option> Cabelos(60 cm) </option>
-           <option> Cabelos(70 cm) </option>
-           <option> Outros Serviços </option>
-           <br>
-        
-</select>
-<br>
-    Descriação do Serviço:&nbsp<input type="text" name="Serviço"><br>
-Nome do cliente:&nbsp<input type="text" name="Cliente"><br>
-        <input type="submit" name=" Calcular" value=" visualizar orçamento"><br>
-    </form>
+            if($('#chec').is(':checked')){
+                $('nav').animate({marginLeft: 350}, delay);
+            } else {
+                $('nav').animate({marginLeft: -350}, delay);
+            }
 
-</fieldset>
-
-             </div>
- </body>
- </htm>
-
+        })
+    </script>
+</htm>

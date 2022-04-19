@@ -1,55 +1,101 @@
-
-.topo{
-
-    texto-align:center;
-  background-color: #800080;
-  height:200px;
-}
-h1 {
-    text-align: center;
-    text-shadow: 2px 2px 2px #000;
-    font-family: verdana ;
-
-}
-.pesquisar{
-    text-align: width;
+body {
+    background: #FFDAB9;
+    font-family: Arial;
 }
 
-h2 {
-    text-align: center;
-    color: #bd87f2;
+input[type="checkbox"]{
+    display:none;
 }
 
-.texto {
-    text-justify;
-    font: size 16px;
-    font-family: arial;
+nav{
+    background-color:rgba( 16,16,16,.5);
+    wIdth:350px;
+    height:100%;
+    left: -350px;
+    position:absolute;
+    top: 0;
+       
+}
 
+a{
+    display:block;
+    paddyng:20px 5px;
+    color:white;
+}
+
+a:hover{
+    background-color:rgb(176,224,230);
+    color:black;
+}
+
+label{
+    pedding:15px;
+    position:absolute;
+    z-index:1;
+}
+
+ul{
+    list-style:none;
+    padding-top: 57px;
+    position: absolute;
+    width: 100%
+}
+
+li {
+    padding: 20px 10px;
+}
+
+.corpo{
+    width:960px;
 }
 
 .conteudo{
+    display: table;
+}
+
+.imagem{
+    display: table-cell;
+    float:left;
+    
+}
+
+.texto{
+    float:left;
+    width:300px;
+    margin-left:20px;
+}
+
+.texto > h2 {
+    margin: 0;
+}
+
+.titulo{
+    font-family:arial;
+    color:#D8BFD8;
+    justify:center;
+
+}
+
+div.pesquisar{
+    width:200px;
+    height:100;
+    padding: 10px 10px;
+}
+
+.topo {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.topo > h1{
+    margin: 0;
     text-align: center;
-    font-family:verdana;
-    font-size:16px;
-    padding:20px;
-}
-.rodape{
-
-    text-aling:center;
-    font-family:verdana;
-    text-shadow:2px 2px 2px #000;
-    color:#fff ;
-    backgraud-color: #191970 ;
-
 }
 
-h3{
-	text-align: center;
-	font-family: verdana;
-	font-size: 18px;
+.topo div-menu-check {
+    float: left;
 }
 
-    .div,p {
-        text-align: center;
-    }
-      
+.content {
+    padding-top: 18px;
+}
